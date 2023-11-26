@@ -127,9 +127,25 @@
       Available almost anywhere on Earth
       </h1>
      <div class="rr" style="align-items: center;">
-     <input type="input" placeholder="service address" onclick="" style="background-color:transparent;width: 300px; border-style: solid; border-color: white;color: white; height: 50PX;">
-     <button type="button" class="btn btn-light" style="padding:10px; margin:20px">ORDER NOW</button>
-      </div></div>
+
+    <input type="text" id="serviceAddress" placeholder="Enter service address" style="background-color:transparent;width: 300px; border-style: solid; border-color: white;color: white; height: 50PX;">
+  <button type="button" id="orderButton" class="btn btn-light" style="padding:10px; margin:20px">ORDER NOW</button>
+
+  <script>
+    function checkInput() {
+      var inputValue = document.getElementById('serviceAddress').value;
+
+      if (inputValue == null || inputValue == '') {
+        alert('Please enter your service address');
+      }
+    }
+
+    // Add event listener to the button to trigger the checkInput function on click
+    document.getElementById('orderButton').addEventListener('click', checkInput);
+  </script>
+     
+     
+     </div></div>
 
 </div></div>
 
