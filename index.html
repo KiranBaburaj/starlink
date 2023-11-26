@@ -131,19 +131,7 @@
     <input type="text" id="serviceAddress" placeholder="Enter service address" style="background-color:transparent;width: 300px; border-style: solid; border-color: white;color: white; height: 50PX;">
   <button type="button" id="orderButton" class="btn btn-light" style="padding:10px; margin:20px">ORDER NOW</button>
 
-  <script>
-    function checkInput() {
-      var inputValue = document.getElementById('serviceAddress').value;
-
-      if (inputValue == null || inputValue == '') {
-        alert('Please enter your service address');
-      }
-    }
-
-    // Add event listener to the button to trigger the checkInput function on click
-    document.getElementById('orderButton').addEventListener('click', checkInput);
-  </script>
-     
+ 
      
      </div></div>
 
@@ -301,7 +289,19 @@ With Starlink, it is a fair deal both ways. Starlink can adjust terms and pricin
 
 
     
+ <script>
+    function checkInput() {
+      var inputValue = document.getElementById('serviceAddress').value;
 
+      if (inputValue == null || inputValue == '') {
+        alert('Please enter your service address');
+      }
+    }
+
+    // Add event listener to the button to trigger the checkInput function on click
+    document.getElementById('orderButton').addEventListener('click', checkInput);
+  </script>
+     
 
 
 
